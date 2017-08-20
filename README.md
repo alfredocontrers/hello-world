@@ -25,9 +25,7 @@ import os
 import collections
  
 ner_tags = collections.Counter()
- 
-corpus_root = "gmb-2.2.0"   # Make sure you set the proper path to the unzipped corpus
- 
+  
 for root, dirs, files in os.walk(corpus_root):
     for filename in files:
         if filename.endswith(".tags"):
